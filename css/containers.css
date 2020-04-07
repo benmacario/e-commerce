@@ -1,0 +1,39 @@
+@import '/css/header.css';
+@import '/css/section.css';
+
+.container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 1fr 200px;
+
+    grid-template-areas: 'h'
+                         's'
+                         'f';
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    grid-area: h;
+
+    width: 100%;
+    background-color: #000;
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);   
+}
+
+aside {
+    grid-area: a;
+}
+
+section {
+    grid-area: s;
+}
+
+footer {
+    grid-area: f;
+}

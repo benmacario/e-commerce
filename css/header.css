@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+.header__wrapper {
+    margin: auto;
+    max-width: 1124px;
+}
+
+.header__img {
+    position: relative;;
+    top: 14px;
+}
+
+.header__form {
+    position: absolute;
+    display: inline-block;
+    top: 28px;
+    margin-left: 150px;
+}
+
+.header__input {
+    padding-left: 16px;
+    font-size: 16px;
+    height: 28px;
+    width: 435px;
+    border: none;
+    border-radius: 4px;
+}
+
+.header__input:focus {
+    outline: 0;
+}
+
+.header__btn {
+    position: relative;
+    padding: 6px;
+    right: 50px;
+    width: 49px;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px
+}
+
+.header__link {
+    margin-left: 20px;
+    padding: 4px;
+    font-family: "Roboto";
+    position: relative;
+    float: right;
+    top: 28px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.header__link--modified {
+    position: static;
+    margin-left: 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header__nav {
+    margin: auto;
+    max-width: 1124px;
+    border-top: 2px solid #202020;
+}
+
+.header__list {
+    margin: auto;
+    height: 48px;
+    padding: 0;
+}
+
+.header__li {
+    display: inline-flex;
+    margin-top: 6px;
+    margin-right: 120px;
+}
