@@ -6,25 +6,35 @@
 .header__wrapper {
     margin: auto;
     max-width: 1124px;
+    border-bottom: 2px solid #202020;
+}
+
+.header__wrapper--modified {
+    border-bottom: none;
+}
+
+.header__wrapper::after {
+    content: '';
+    clear: both;
+    display: table;
 }
 
 .header__img {
-    position: relative;;
-    top: 14px;
+    float: left;
 }
 
 .header__form {
-    position: absolute;
-    display: inline-block;
+    position: relative;
+    float: left;
     top: 28px;
-    margin-left: 150px;
+    margin-left: 104px;
 }
 
 .header__input {
     padding-left: 16px;
     font-size: 16px;
     height: 28px;
-    width: 435px;
+    width: 400px;
     border: none;
     border-radius: 4px;
 }
@@ -45,12 +55,12 @@
 }
 
 .header__link {
-    margin-left: 20px;
+    margin-left: 38px;
     padding: 4px;
     font-family: "Roboto";
     position: relative;
     float: right;
-    top: 28px;
+    top: 10px;
     text-decoration: none;
     color: #FFF;
     font-size: 16px;
@@ -61,18 +71,53 @@
     position: static;
     margin-left: 0;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.header__nav {
-    margin: auto;
-    max-width: 1124px;
-    border-top: 2px solid #202020;
+.header__sacola {
+    color: #D8D8D8;
+    position: relative;
+    top: 14px;
+    font-size: 32px;
+}
+
+.header__compras {
+    color: #D8D8D8;
+    display: inline;
+    font-size: 14px;
+}
+
+.header__valor {
+    position: relative;
+    left: 32px;
+    line-height: 5px;
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+}
+
+.header__user {
+    float: left;
+    background-color: #B4B4B4;
+    color: #D8D8D8;
+    margin-top: 11px;
+    padding: 4px 8px;
+    font-size: 28px;
+    border: 2px solid rgba(255,255,255, 0.2);
+    border-radius: 50%;
+}
+
+.header__entre {
+    position: relative;
+    top: 2px;
+    float: left;
+    margin-left: 5px;
+    color: #D8D8D8;
+    font-size: 14px;
 }
 
 .header__list {
+    float: left;
     margin: auto;
-    height: 48px;
     padding: 0;
 }
 
@@ -80,4 +125,9 @@
     display: inline-flex;
     margin-top: 6px;
     margin-right: 120px;
+    transition: opacity 0.5s;
+}
+
+.header__li:hover {
+    opacity: 0.66;
 }
