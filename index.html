@@ -3,44 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/containers.css">
+    <link rel="stylesheet" href="src/css/container.css">
+    <link rel="stylesheet" href="src/css/headerContainer.css">
     <link rel="stylesheet" href="src/fonts/fontawesome/css/all.min.css">
     <title>Soberana Chique</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="src/img/soberana-logo.png" alt="Soberana Chique">
-            <div class="form">
-                <form action="#">
-                    <input class="form__search" type="search" placeholder="Pesquisar" required="required">
-                    <button class="form__btn" type="submit"><i class="form__icon-search"></i></button>
-                </form>
+        <header class="container__header">
+            <div class="col-1 container-width">
+                <img src="src/img/soberana-logo.png" alt="Soberana Chique">
+                <div class="form">
+                    <form action="#">
+                        <input class="form__search" type="search" placeholder="Pesquisar" required="required">
+                        <button class="form__btn" type="submit"><i class="form__icon-search fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="div-group">
+                    <div class="user">
+                        <a href="#">
+                            <i class="user__icon fas fa-user-circle"></i>
+                            <p class="user__p">Entre ou cadastre-se</p>
+                        </a>
+                    </div>
+                    <div class="user-bag">
+                        <a href="#">
+                            <i class="user-bag__icon fab fa-shopify"></i>
+                            <p class="user-bag__p">
+                                Minhas compras
+                                <small class="user-bag__subtotal">R$ 0,00</small>
+                            </p>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div id="user">
-                <a href="#">
-                    <i class="user__icon"></i>
-                    <p class="user__p">Entre ou cadastre-se</p>
-                </a>
-            </div>
-            <div id="user-bag">
-                <a href="#">
-                    <i class="user-bag__icon"></i>
-                    <p class="user-bag__p">Minhas compras
-                        <small class="user-bag__subtotal">R$ 0,00</small>
-                    </p>
-                </a>
-            </div>
-            <div id=menu-nav>
+            <div class="menu-nav col-2 container-width">
                 <nav>
                     <ul class="menu__ul">
-                        <li class="menu__li">FEMININO</li>
-                        <li class="menu__li">MASCULINO</li>
-                        <li class="menu__li">INFANTIL</li>
+                        <li class="menu__li"><a href="#">FEMININO</a></li>
+                        <li class="menu__li"><a href="#">MASCULINO</a></li>
+                        <li class="menu__li"><a href="#">INFANTIL</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+        <main class="container__main">
+
+        </main>
+        <footer class="container__footer">
+
+        </footer>
     </div>
 </body>
 </html>

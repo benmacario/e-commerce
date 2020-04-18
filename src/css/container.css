@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 152px 1fr 1fr;
+  grid-template-areas: 'header' 'main' 'footer'; }
+  .container header {
+    grid-area: header; }
+  .container main {
+    grid-area: main; }
+  .container footer {
+    grid-area: footer; }
+
+.container-width {
+  width: calc(100vw - 18%);
+  margin: auto; }
+
+/*# sourceMappingURL=container.css.map */
