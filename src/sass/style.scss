@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Saira";
+    src: url("../fonts/Saira-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Saira-bold";
+    src: url("../fonts/Saira-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Saira-light";
+    src: url("../fonts/Saira-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+.container__main {
+    margin-top: 60px;
+}
+.title {
+    h2 {
+        font-family: "Saira";
+        margin-bottom: 20px;
+    }
+    
+    .line__title {
+        height: 2px;
+        background-color: #000;
+        border: none;
+    }
+}
+
+.pages {
+    &::after {
+        content: '';
+        clear: both;
+    }
+    
+    margin: 40px 0 40px 100%;
+    float: right;
+    ul {
+        list-style-type: none;
+        display: flex;
+        
+        li {
+            padding: 10px 20px;
+            
+            &:first-child {
+                border: 1px solid #A3A1A1;
+            }
+
+        }
+        
+        a {
+            font-family: "Roboto";
+            font-size: 16px;
+            text-decoration: none;
+            color: #A3A1A1;
+            
+        }
+    }
+}
+
+
+.thumbnails__ul {
+    list-style-type: none;
+    display: inline-block;
+    font-family: "Saira-light";
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.thumbnails__col {
+    margin-right: 20px;
+    transition: transform 0.8s;
+
+    &:nth-child(4n+0) {
+        margin-right: 0;
+    }
+
+    &:hover {
+        transform: scale(1.055);
+    }
+    
+    margin-bottom: 25px;
+    display: inline-flex;
+    max-width: calc(100% / 4.25);
+    // border: 1px solid #ccc;
+    
+    .thumbnails__img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+    
+    h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        text-decoration: line-through;
+    }
+
+    strong {
+        line-height: 20px;
+        font-size: 18px;
+        font-family: "Saira-bold";
+    }
+}
