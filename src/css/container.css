@@ -211,7 +211,7 @@
 
 .footer__links {
   display: flex;
-  margin-top: 80px;
+  margin-top: 80px !important;
   font-family: "Rubik", sans-serif;
 }
 .footer__links div {

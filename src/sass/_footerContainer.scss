@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruluko&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 @font-face {
     font-family: "Roboto-regular";
     src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 @font-face {
     font-family: "Saira-light";
@@ -124,7 +122,7 @@
 
 .footer__links {
     display: flex;
-    margin-top: 80px;
+    margin-top: 80px !important;
     font-family: "Rubik", sans-serif;
     
     div {
